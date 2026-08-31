@@ -10,20 +10,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>Vanilla Weather</title>
 </head>
 <body>
     <div class="weather-app">
         <header>
-            <form class="search-form">
-                <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input" id="city-input"/>
                 <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city">Paris</h1>
+                    <h1 class="weather-app-city" id="cityName">Paris</h1>
                     <p class="weather-app-details">Tuesday 1430hrs, scattered clouds
                         <br/>
                         Humidity: <strong>72%</strong>, Wind: <strong>5km/h</strong>
@@ -40,5 +41,6 @@
             This projected was coded  by <a href="https://www.linkedin.com/in/poloko-dignity-ranna" target="blank">Poloko Ranna,</a> is <a href="https://github.com/Ranna20" target="blank">open-sourced on Github</a> and <a href="https://vanillapoloko.netlify.app/" target="blank">hosted on Netlify</a>
         </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
